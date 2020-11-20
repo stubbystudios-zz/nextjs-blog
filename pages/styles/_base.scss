@@ -1,0 +1,95 @@
+body {
+  background: $black-100;
+  color: $black-900;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+
+  @include font-size(16px);
+}
+
+.container {
+  .section-title {
+    margin: calcRem(48px) 0 16px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+
+    @include font-size(18px);
+  }
+}
+
+main {
+  color: $black;
+  width: 100vw;
+}
+
+header {
+  margin-bottom: calcRem(24px);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $black-700;
+  font-family: "Fauna One", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  @include font-size(44px);
+}
+
+h2 {
+  @include font-size(32px);
+}
+
+h3 {
+  @include font-size(22px);
+}
+
+h4 {
+  @include font-size(18px);
+}
+
+h5 {
+  @include font-size(16px);
+}
+
+h6 {
+  font-weight: 700;
+
+  @include font-size(14px);
+}
+
+a,
+a:visited {
+  color: $brand-a;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($brand-a, 20%);
+  }
+}
+
+p,
+ul {
+  margin-bottom: calcRem(16px);
+}
+
+img {
+  max-width: 100%;
+}
+
+@include breakpoint() {
+  h1 {
+    @include font-size(48px);
+  }
+
+  h2 {
+    @include font-size(36px);
+  }
+
+  h3 {
+    @include font-size(24px);
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  margin: 24px auto;
+  max-width: 700px;
+  padding: 0 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  a,
+  img,
+  h1,
+  h2 {
+    margin: 0 auto;
+    
+    @include font-size(24px);
+  }
+}
+
+.profile_pic {
+  border-radius: 50%;
+  display: block;
+  height: calcRem(150px);
+  overflow: hidden;
+  width: calcRem(150px);
+}
